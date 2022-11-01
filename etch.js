@@ -75,7 +75,7 @@ for (let i=0; i<element2.length; i++){
  let ask = prompt('Size of grid?')
  userinput = Number(ask)
 if (userinput >100 || userinput=="" || userinput==null || isNaN(userinput)){ 
-    alert("Maximum grid 64x64, an enter a number");
+    alert("Maximum grid 100x100, and please enter a number only");
     userinput = 16;
 
 

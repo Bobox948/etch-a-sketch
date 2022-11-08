@@ -1,4 +1,6 @@
 body { min-width:1000px;
+
+    /* this way, when we shrink the page, the squares don't wrap*/
   
 
 }
@@ -11,6 +13,7 @@ body { min-width:1000px;
     border: 1px solid black;
 
 
+
 }
 
 
@@ -18,6 +21,7 @@ body { min-width:1000px;
 
     display: flex;
     flex-wrap: wrap;
+     
 }
 
 .break {

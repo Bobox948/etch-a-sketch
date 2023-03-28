@@ -83,3 +83,13 @@ function changecolor(event){
 
 }
 
+document.querySelector('#download').addEventListener('click', function() {
+    html2canvas(document.querySelector('#container1')).then(function(canvas) {
+        var link = document.createElement("a");
+        document.body.appendChild(link);
+        link.download = "etch-a-sketch.png";
+        link.href = canvas.toDataURL();
+        link.target = '_blank';
+        link.click();
+    });
+});

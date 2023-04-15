@@ -2,7 +2,7 @@
 const container = document.getElementById('container1');
 
 
-var grid =75; // default grid size, 75*75
+var grid = 75; // default grid size, 75*75
 
 for (let i=0; i<grid; i++){ // creation of the grid 75*75
 
@@ -83,7 +83,7 @@ function changecolor(event){
 
 }
 
-document.querySelector('#download').addEventListener('click', function() {
+document.querySelector('#download').addEventListener('click', function() { // the function to download the drawing
     html2canvas(document.querySelector('#container1')).then(function(canvas) {
         var link = document.createElement("a");
         document.body.appendChild(link);
